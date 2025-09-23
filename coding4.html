@@ -1,0 +1,47 @@
+console.log("💰 TIP CALCULATOR 💰\n");
+
+// Function to calculate tip and display results
+function calculateTip(billAmount) {
+    // Variables
+    let bill = billAmount;
+    
+    // Calculate tip using ternary operator
+    // Rule: 15% if bill is between 50-300, otherwise 20%
+    let tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+    
+    // Calculate total
+    let total = bill + tip;
+    
+    // Display results using template literals
+    console.log(`The bill was ${bill}, the tip was ${tip.toFixed(2)}, and the total value ${total.toFixed(2)}`);
+}
+
+// Test Cases
+console.log("=== Test Case 1: Bill = 275 ===");
+calculateTip(275);
+
+console.log("\n=== Test Case 2: Bill = 40 ===");
+calculateTip(40);
+
+console.log("\n=== Test Case 3: Bill = 430 ===");
+calculateTip(430);
+
+// Alternative: Individual calculations for each test case
+console.log("\n" + "=".repeat(50));
+console.log("INDIVIDUAL CALCULATIONS:");
+console.log("=".repeat(50));
+
+// Test Case 1: 275
+let bill = 275;
+let tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+console.log(`The bill was ${bill}, the tip was ${tip.toFixed(2)}, and the total value ${(bill + tip).toFixed(2)}`);
+
+// Test Case 2: 40
+bill = 40;
+tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+console.log(`The bill was ${bill}, the tip was ${tip.toFixed(2)}, and the total value ${(bill + tip).toFixed(2)}`);
+
+// Test Case 3: 430
+bill = 430;
+tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+console.log(`The bill was ${bill}, the tip was ${tip.toFixed(2)}, and the total value ${(bill + tip).toFixed(2)}`);
