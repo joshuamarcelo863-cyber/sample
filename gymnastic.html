@@ -1,0 +1,97 @@
+console.log("🏆 DOLPHINS vs KOALAS SCORING CHALLENGE 🏆\n");
+
+// Helper function to calculate average
+function calculateAverage(scores) {
+    const sum = scores.reduce((total, score) => total + score, 0);
+    return sum / scores.length;
+}
+
+// ===========================================
+// PART 1: Basic Trophy Rules
+// ===========================================
+console.log("=== PART 1: Basic Trophy Rules ===");
+
+// Test Data 1
+const dolphins1 = [96, 108, 89];
+const koalas1 = [88, 91, 110];
+
+console.log(`Dolphins scores: ${dolphins1.join(', ')}`);
+console.log(`Koalas scores: ${koalas1.join(', ')}`);
+
+// Calculate averages
+const dolphinsAvg1 = calculateAverage(dolphins1);
+const koalasAvg1 = calculateAverage(koalas1);
+
+console.log(`Dolphins average: ${dolphinsAvg1.toFixed(1)}`);
+console.log(`Koalas average: ${koalasAvg1.toFixed(1)}`);
+
+// Determine winner - basic rules
+if (dolphinsAvg1 > koalasAvg1) {
+    console.log("Dolphins win the trophy 🏆");
+} else if (koalasAvg1 > dolphinsAvg1) {
+    console.log("Koalas win the trophy 🏆");
+} else {
+    console.log("Both teams win the trophy 🏆");
+}
+
+// ===========================================
+// PART 2: Minimum Score Requirement
+// ===========================================
+console.log("\n=== PART 2: Minimum Score Requirement (100 points) ===");
+
+// Test Data 2
+const dolphins2 = [97, 112, 101];
+const koalas2 = [109, 95, 123];
+
+console.log(`Dolphins scores: ${dolphins2.join(', ')}`);
+console.log(`Koalas scores: ${koalas2.join(', ')}`);
+
+// Calculate averages
+const dolphinsAvg2 = calculateAverage(dolphins2);
+const koalasAvg2 = calculateAverage(koalas2);
+
+console.log(`Dolphins average: ${dolphinsAvg2.toFixed(1)}`);
+console.log(`Koalas average: ${koalasAvg2.toFixed(1)}`);
+
+// Determine winner - must have higher score AND at least 100 points
+if (dolphinsAvg2 > koalasAvg2 && dolphinsAvg2 >= 100) {
+    console.log("Dolphins win the trophy 🏆");
+} else if (koalasAvg2 > dolphinsAvg2 && koalasAvg2 >= 100) {
+    console.log("Koalas win the trophy 🏆");
+} else if (dolphinsAvg2 === koalasAvg2 && dolphinsAvg2 >= 100) {
+    console.log("Both teams win the trophy 🏆");
+} else {
+    console.log("No team wins the trophy 😢");
+}
+
+// ===========================================
+// PART 3: Advanced Draw Rules
+// ===========================================
+console.log("\n=== PART 3: Advanced Rules (Draw requires 100+ for BOTH teams) ===");
+
+// Test Data Bonus 2
+const dolphins3 = [97, 112, 101];
+const koalas3 = [109, 95, 106];
+
+console.log(`Dolphins scores: ${dolphins3.join(', ')}`);
+console.log(`Koalas scores: ${koalas3.join(', ')}`);
+
+// Calculate averages
+const dolphinsAvg3 = calculateAverage(dolphins3);
+const koalasAvg3 = calculateAverage(koalas3);
+
+console.log(`Dolphins average: ${dolphinsAvg3.toFixed(1)}`);
+console.log(`Koalas average: ${koalasAvg3.toFixed(1)}`);
+
+// Determine winner - advanced rules
+if (dolphinsAvg3 > koalasAvg3 && dolphinsAvg3 >= 100) {
+    console.log("Dolphins win the trophy 🏆");
+} else if (koalasAvg3 > dolphinsAvg3 && koalasAvg3 >= 100) {
+    console.log("Koalas win the trophy 🏆");
+} else if (dolphinsAvg3 === koalasAvg3 && dolphinsAvg3 >= 100 && koalasAvg3 >= 100) {
+    console.log("Both teams win the trophy 🏆");
+} else {
+    console.log("No team wins the trophy 😢");
+}
+
+console.log("\n🎉 Challenge Complete! 🎉");
