@@ -1,0 +1,55 @@
+// BMI Calculator Challenge
+// Formula: BMI = mass / height²
+
+console.log("=== BMI CALCULATOR CHALLENGE ===");
+
+// TEST DATA 1
+console.log("\n--- TEST DATA 1 ---");
+
+// Store Mark's mass and height (using const as values won't change)
+const markMass1 = 78; // kg
+const markHeight1 = 1.69; // m
+
+// Store John's mass and height
+const johnMass1 = 92; // kg
+const johnHeight1 = 1.95; // m
+
+// Calculate BMIs using the formula (with parentheses for clarity)
+const markBMI1 = markMass1 / (markHeight1 ** 2);
+const johnBMI1 = johnMass1 / (johnHeight1 ** 2);
+
+// Create Boolean variable for comparison
+const markHigherBMI1 = markBMI1 > johnBMI1;
+
+// Log the results
+console.log(`Mark's BMI: ${markBMI1.toFixed(1)}`);
+console.log(`John's BMI: ${johnBMI1.toFixed(1)}`);
+console.log(`Mark has higher BMI: ${markHigherBMI1}`);
+
+// TEST DATA 2
+console.log("\n--- TEST DATA 2 ---");
+
+// Store Mark's mass and height for test data 2
+const markMass2 = 95; // kg
+const markHeight2 = 1.88; // m
+
+// Store John's mass and height for test data 2
+const johnMass2 = 85; // kg
+const johnHeight2 = 1.76; // m
+
+// Calculate BMIs using the formula (with parentheses for clarity)
+const markBMI2 = markMass2 / (markHeight2 ** 2);
+const johnBMI2 = johnMass2 / (johnHeight2 ** 2);
+
+// Create Boolean variable for comparison
+const markHigherBMI2 = markBMI2 > johnBMI2;
+
+// Log the results
+console.log(`Mark's BMI: ${markBMI2.toFixed(1)}`);
+console.log(`John's BMI: ${johnBMI2.toFixed(1)}`);
+console.log(`Mark has higher BMI: ${markHigherBMI2}`);
+
+// Summary
+console.log("\n=== SUMMARY ===");
+console.log(`Test Data 1 - Mark higher BMI: ${markHigherBMI1}`);
+console.log(`Test Data 2 - Mark higher BMI: ${markHigherBMI2}`);
