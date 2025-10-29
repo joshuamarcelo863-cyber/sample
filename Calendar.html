@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calendar</title>
+    <style>
+      body {
+        padding: 30px;
+      }
+
+      #wrapper {
+        width: 850px;
+      }
+
+      #prev-month {
+        width: 140px;
+        height: 140px;
+        background-color: #ccc;
+        display: inline-block;
+        margin-right: 15px;
+        vertical-align: top;
+      }
+
+      #calendar {
+        width: 520px;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      #next-month {
+        width: 140px;
+        height: 140px;
+        background-color: #ccc;
+        display: inline-block;
+        margin-left: 15px;
+        vertical-align: top;
+      }
+
+      h1 {
+        background-color: #3d5a99;
+        color: white;
+        padding: 12px;
+        text-align: center;
+      }
+
+      .week {
+        margin-bottom: 3px;
+      }
+
+      .day {
+        width: 68px;
+        height: 68px;
+        background-color: #d0ddf0;
+        display: inline-block;
+        text-align: center;
+        line-height: 68px;
+        margin: 2px;
+      }
+
+      .header {
+        background-color: #a8bce0;
+        height: 28px;
+        line-height: 28px;
+        font-weight: bold;
+      }
+
+      .empty {
+        background-color: white;
+      }
+
+      .current {
+        background-color: #3d5a99;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="prev-month"></div>
+
+      <div id="calendar">
+        <h1>October 2025</h1>
+        
+        <div class="week">
+          <div class="day header">Sun</div>
+          <div class="day header">Mon</div>
+          <div class="day header">Tue</div>
+          <div class="day header">Wed</div>
+          <div class="day header">Thu</div>
+          <div class="day header">Fri</div>
+          <div class="day header">Sat</div>
+        </div>
+
+        <div class="week">
+          <div class="day empty"></div>
+          <div class="day empty"></div>
+          <div class="day empty"></div>
+          <div class="day">1</div>
+          <div class="day">2</div>
+          <div class="day">3</div>
+          <div class="day">4</div>
+        </div>
+
+        <div class="week">
+          <div class="day">5</div>
+          <div class="day">6</div>
+          <div class="day">7</div>
+          <div class="day">8</div>
+          <div class="day">9</div>
+          <div class="day">10</div>
+          <div class="day">11</div>
+        </div>
+
+        <div class="week">
+          <div class="day">12</div>
+          <div class="day">13</div>
+          <div class="day">14</div>
+          <div class="day">15</div>
+          <div class="day">16</div>
+          <div class="day">17</div>
+          <div class="day">18</div>
+        </div>
+
+        <div class="week">
+          <div class="day">19</div>
+          <div class="day">20</div>
+          <div class="day">21</div>
+          <div class="day">22</div>
+          <div class="day">23</div>
+          <div class="day">24</div>
+          <div class="day">25</div>
+        </div>
+
+        <div class="week">
+          <div class="day">26</div>
+          <div class="day">27</div>
+          <div class="day">28</div>
+          <div class="day current">29</div>
+          <div class="day">30</div>
+          <div class="day">31</div>
+          <div class="day empty"></div>
+        </div>
+      </div>
+
+      <div id="next-month"></div>
+    </div>
+  </body>
+</html>
