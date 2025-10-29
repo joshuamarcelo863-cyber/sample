@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Building Boxes</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        padding: 20px;
+        font-family: Arial, sans-serif;
+      }
+
+      #container {
+        width: 950px;
+        background-color: silver;
+        padding: 20px;
+      }
+
+      #header {
+        background-color: green;
+        height: 150px;
+        margin-bottom: 20px;
+      }
+
+      #navigation {
+        background-color: blue;
+        height: 300px;
+        width: 200px;
+        display: inline-block;
+        margin-right: 20px;
+        vertical-align: top;
+      }
+
+      #main-content {
+        background-color: red;
+        height: 400px;
+        width: 710px;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      #sub-content-1 {
+        background-color: yellow;
+        height: 200px;
+        margin-bottom: 20px;
+      }
+
+      #sub-content-2 {
+        background-color: yellow;
+        height: 180px;
+      }
+
+      #advertisement {
+        background-color: purple;
+        height: 120px;
+        width: 660px;
+        margin: 20px auto 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header"></div>
+      <div id="navigation"></div>
+      <div id="main-content">
+        <div id="sub-content-1"></div>
+        <div id="sub-content-2"></div>
+      </div>
+      <div id="advertisement"></div>
+    </div>
+  </body>
+</html>
