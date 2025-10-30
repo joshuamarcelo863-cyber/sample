@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { font-family: Arial, sans-serif; background: #e8e8e8; }
+        
+        header { background: #bbb; padding: 12px 18px; border-bottom: 2px solid #888; }
+        
+        header h1 { font-size: 16px; color: #444; }
+        
+        main { padding: 12px; display: flex; flex-direction: column; gap: 12px; }
+        
+        .row { display: flex; gap: 12px; }
+        
+        .box { border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.15); }
+        
+        .a { background: #16a085; flex: 1; height: 110px; }
+        .b { background: #e67e22; flex: 2; height: 110px; }
+        .wrap { background: #2c3e50; padding: 16px; display: flex; gap: 12px; border-radius: 6px; }
+        .c { background: #d5a6bd; flex: 3; height: 170px; border-radius: 4px; }
+        .d { background: #85c1e2; flex: 1; height: 170px; border-radius: 4px; }
+        .e { background: #f1c40f; flex: 1; height: 90px; }
+        .f { background: #82e0aa; flex: 1; height: 90px; }
+        .g { background: #edbb99; flex: 1; height: 90px; }
+
+        @media (max-width: 480px) {
+            main { padding: 8px; gap: 8px; }
+            .row, .wrap { flex-direction: column; gap: 8px; }
+            .a, .b, .e, .f, .g { height: 85px; }
+            .c { height: 140px; }
+            .d { height: 110px; }
+        }
+
+        @media (min-width: 481px) and (max-width: 1023px) {
+            .g { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Responsive Layout</h1></header>
+    <main>
+        <div class="row">
+            <div class="box a"></div>
+            <div class="box b"></div>
+        </div>
+        <div class="wrap">
+            <div class="c"></div>
+            <div class="d"></div>
+        </div>
+        <div class="row">
+            <div class="box e"></div>
+            <div class="box f"></div>
+            <div class="box g"></div>
+        </div>
+    </main>
+</body>
+</html>
